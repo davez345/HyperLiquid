@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  hyperliquid-trading:
+    build: .
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    volumes:
+      - ./:/usr/local/hyperliquid-trading
